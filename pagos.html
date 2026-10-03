@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Métodos de pago | Purple Sky English S.R.L.</title>
+  <link rel="icon" href="img/Designer.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Outfit:wght@600&display=swap">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<header><div class="wrap">
+  <a class="marca" href="index.html" aria-label="Ir al inicio"><img src="img/Designer.png" alt="">Purple Sky English</a>
+  <button id="menu" aria-label="Abrir menú" aria-expanded="false">Menú</button>
+  <nav><ul>
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="cursos.html">Cursos</a></li>
+    <li><a href="encuesta.html">Encuesta</a></li>
+    <li><a href="pagos.html">Pagos</a></li>
+    <li><a href="contacto.html">Contacto</a></li>
+  </ul></nav>
+</div></header>
+<main>
+<section><div class="wrap">
+  <h2>Métodos de pago</h2>
+  <form id="pagoForm" class="pago-form">
+    <fieldset><legend>1. Datos personales</legend>
+      <div class="form-grid"><div><label for="nombre">Nombre completo</label><input id="nombre" name="nombre" required autocomplete="name"><span class="err"></span></div><div><label for="documento">CI o NIT</label><input id="documento" name="documento" required><span class="err"></span></div><div><label for="correo">Correo electrónico</label><input id="correo" name="correo" type="email" required autocomplete="email"><span class="err"></span></div><div><label for="departamento">Departamento</label><select id="departamento" name="departamento" required><option value="">Selecciona tu departamento</option><option>La Paz</option><option>Santa Cruz</option><option>Cochabamba</option><option>Chuquisaca</option><option>Tarija</option><option>Oruro</option><option>Potosí</option><option>Beni</option><option>Pando</option></select><span class="err"></span></div></div>
+    </fieldset>
+    <fieldset><legend>2. Elige tu plan</legend>
+      <label for="curso">Curso</label><select id="curso" name="curso" required><option value="0">Selecciona un curso</option><option value="150">Inglés A1 – Primeros pasos</option><option value="150">Inglés A2 – Básico</option><option value="180">Inglés B1 – Intermedio</option><option value="180">Inglés B2 – Avanzado</option><option value="160">Conversación</option><option value="200">Inglés para negocios</option></select><span class="err"></span>
+      <label for="meses">Modalidad</label><select id="meses" name="meses"><option value="2">Plan bimestral (2 meses)</option><option value="3">Plan acelerado (3 meses)</option></select>
+      <p>Total a pagar: <span class="total tot">Bs 0</span></p>
+    </fieldset>
+    <fieldset><legend>3. ¿Pagarás en efectivo?</legend>
+      <label for="metodo">Método de pago</label><select id="metodo" name="metodo" required><option value="">Selecciona una opción</option><option value="efectivo">Sí, pagaré en efectivo</option><option value="qr">No, pagaré por QR</option></select><span class="err"></span>
+      <div id="qr" class="panel"><div class="pago"><img class="qr" src="img/WhatsApp Image 2026-10-03 at 12.34.13 AM.jpeg" alt="Código QR para pagar a Purple Sky English S.R.L."><ol class="pasos"><li>Escanea el QR con tu banco.</li><li>Escribe el monto: <b class="tot">Bs 0</b>.</li><li>Guarda la captura del comprobante.</li></ol></div></div>
+      <div id="efectivo" class="panel"><div class="card"><p>Deposita en cualquier sucursal del <b>Banco Sol</b>.</p><p>Titular: <b>Purple Sky English S.R.L.</b></p><p>Cuenta: <b id="cuenta">000-0000000-0-00</b></p><p>Monto: <b class="tot">Bs 0</b></p><button type="button" class="btn os" id="copiar">Copiar número</button></div></div>
+    </fieldset>
+    <button type="submit" class="btn os">Confirmar pago y generar factura</button>
+  </form>
+  <div id="pagoExito" class="pago-exito oculto" aria-live="polite"><h2>¡Pago registrado correctamente!</h2><p id="correoAviso"></p><a id="enviarCorreo" class="btn" href="#">Enviar confirmación por correo</a></div>
+  <article id="factura" class="factura oculto"><div class="factura-cabecera"><div><h2>Factura referencial</h2><p>Purple Sky English S.R.L.</p><p>Factura N° <b id="facturaNumero"></b></p></div><strong>13%<small>Crédito fiscal</small></strong></div><div class="factura-datos"><p><b>Cliente:</b> <span id="facturaNombre"></span></p><p><b>CI/NIT:</b> <span id="facturaDocumento"></span></p><p><b>Correo:</b> <span id="facturaCorreo"></span></p><p><b>Departamento:</b> <span id="facturaDepartamento"></span></p></div><div class="factura-total"><p>Importe total: <b id="facturaTotal"></b></p><p>Crédito fiscal (13%): <b id="facturaCredito"></b></p></div><small>Documento referencial para este sitio. La factura con validez fiscal debe emitirse mediante el sistema autorizado por el SIN con los datos tributarios reales.</small></article>
+  <p style="margin-top:24px"><small>El pago se verificará antes de confirmar la inscripción. Reemplaza el QR, la cuenta y los datos tributarios por los oficiales de tu empresa.</small></p>
+</div></section>
+</main>
+<footer>© <span id="anio">2026</span> Purple Sky English S.R.L. · Cursos virtuales de inglés · Bolivia</footer>
+<script src="js/app.js"></script>
+</body>
+</html>

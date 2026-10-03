@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Libros Top Notch | Purple Sky English S.R.L.</title>
+  <link rel="icon" href="img/Designer.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Outfit:wght@600&display=swap">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<header><div class="wrap">
+  <a class="marca" href="index.html" aria-label="Ir al inicio"><img src="img/Designer.png" alt="Logo">Purple Sky English</a>
+  <button id="menu" aria-label="Abrir menú" aria-expanded="false">Menú</button>
+  <nav><ul>
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="cursos.html">Cursos</a></li>
+    <li><a href="libros.html" class="activo">Libros</a></li>
+    <li><a href="pagos.html">Pagos</a></li>
+    <li><a href="contacto.html">Contacto</a></li>
+  </ul></nav>
+</div></header>
+<main>
+<section class="libros-hero"><div class="wrap">
+  <span class="etiqueta">Material de estudio</span>
+  <h1>Tu biblioteca Top Notch</h1>
+  <p id="libroMensaje">Aquí encontrarás los libros Pearson Top Notch que acompañan cada nivel de tu ruta de aprendizaje.</p>
+  <a class="btn" href="cursos.html#ruta">Cambiar mi nivel</a>
+</div></section>
+<section><div class="wrap">
+  <h2>Libros por nivel</h2>
+  <div class="libros-grid">
+    <article class="libro-card" data-nivel="A1" id="libro-A1">
+      <div class="libro-portada"><img src="img/topA1.png" alt="Portada del libro Top Notch para nivel A1" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span>A1</span></div>
+      <div><span class="nivel-label">Nivel A1 · Inicial</span><h3>Pearson Top Notch Fundamentals</h3><p>La base para comenzar a comprender y comunicarte en inglés.</p><p class="libro-extra">Incluye Student Book y Workbook.</p></div>
+    </article>
+    <article class="libro-card" data-nivel="A2" id="libro-A2">
+      <div class="libro-portada"><img src="img/topA2.png" alt="Portada del libro Top Notch para nivel A2" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span>A2</span></div>
+      <div><span class="nivel-label">Nivel A2 · Básico</span><h3>Pearson Top Notch 1</h3><p>Práctica para hablar de tu rutina, gustos y planes.</p><p class="libro-extra">Incluye Student Book y Workbook.</p></div>
+    </article>
+    <article class="libro-card" data-nivel="B1" id="libro-B1">
+      <div class="libro-portada"><img src="img/topB1.png" alt="Portada del libro Top Notch para nivel B1" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span>B1</span></div>
+      <div><span class="nivel-label">Nivel B1 · Intermedio</span><h3>Pearson Top Notch 2</h3><p>Desarrollo de conversación, comprensión y confianza.</p><p class="libro-extra">Incluye Student Book y Workbook.</p></div>
+    </article>
+    <article class="libro-card" data-nivel="B2" id="libro-B2">
+      <div class="libro-portada"><img src="img/topB2.png" alt="Portada del libro Top Notch para nivel B2" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span>B2</span></div>
+      <div><span class="nivel-label">Nivel B2 · Avanzado</span><h3>Pearson Top Notch 3</h3><p>Material para expresarte con mayor fluidez y precisión.</p><p class="libro-extra">Incluye Student Book y Workbook.</p></div>
+    </article>
+  </div>
+  <div class="libro-nota"><strong>Agrega aquí las portadas:</strong> guarda tus imágenes con los nombres <code>topnotch-a1.jpg</code>, <code>topnotch-a2.jpg</code>, <code>topnotch-b1.jpg</code> y <code>topnotch-b2.jpg</code> dentro de la carpeta <code>img</code>.</div>
+</div></section>
+</main>
+<footer>© <span id="anio">2026</span> Purple Sky English S.R.L. · Material Pearson Top Notch · Bolivia</footer>
+<script src="js/app.js"></script>
+</body>
+</html>

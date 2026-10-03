@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | Purple Sky English S.R.L.</title>
+  <link rel="icon" href="img/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Outfit:wght@600&display=swap">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<header><div class="wrap">
+  <a class="marca" href="index.html" aria-label="Ir al inicio"><img src="img/Designer.png" alt="">Purple Sky English</a>
+  <button id="menu" aria-label="Abrir menú" aria-expanded="false">Menú</button>
+  <nav><ul>
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="cursos.html">Cursos</a></li>
+    <li><a href="encuesta.html">Encuesta</a></li>
+    <li><a href="pagos.html">Pagos</a></li>
+    <li><a href="contacto.html">Contacto</a></li>
+  </ul></nav>
+</div></header>
+<main>
+<section><div class="wrap">
+  <h2>Contacto</h2>
+  <div class="pago"><div>
+    <form id="form" novalidate>
+      <label for="n">Nombre completo</label><input id="n" required autocomplete="name"><div class="err"></div>
+      <label for="e">Correo electrónico</label><input id="e" type="email" required autocomplete="email"><div class="err"></div>
+      <label for="m">Mensaje (curso elegido o comprobante de pago)</label><textarea id="m" rows="4" required></textarea><div class="err"></div>
+      <button class="btn os" type="submit">Enviar mensaje</button>
+    </form>
+    <div class="ok" role="status"><b>Mensaje enviado.</b> Te respondemos pronto.</div>
+  </div>
+  <div>
+    <div class="card" style="margin-bottom:20px"><h3>Escríbenos</h3><p>WhatsApp: +591 7000 0000</p><p>Instagram, Facebook y TikTok: @purpleskyenglish</p><small>Reemplaza estos datos por los reales.</small></div>
+    <h3 style="margin-bottom:10px">Preguntas frecuentes</h3>
+    <details><summary>¿Necesito conocimientos previos?</summary><p>No. Tenemos cursos desde nivel cero.</p></details>
+    <details><summary>¿Cómo son las clases?</summary><p>En vivo por videollamada, en grupos pequeños.</p></details>
+    <details><summary>¿Cuánto tarda en confirmarse mi pago?</summary><p>Menos de 24 horas hábiles.</p></details>
+  </div></div>
+</div></section>
+</main>
+<footer>© <span id="anio">2026</span> Purple Sky English S.R.L. · Cursos virtuales de inglés · Bolivia</footer>
+<script src="js/app.js"></script>
+</body>
+</html>

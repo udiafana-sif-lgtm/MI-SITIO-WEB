@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cursos | Purple Sky English S.R.L.</title>
+  <link rel="icon" href="img/Designer.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Outfit:wght@600&display=swap">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<header><div class="wrap">
+  <a class="marca" href="index.html" aria-label="Ir al inicio"><img src="img/Designer.png" alt="">Purple Sky English</a>
+  <button id="menu" aria-label="Abrir menú" aria-expanded="false">Menú</button>
+  <nav><ul>
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="cursos.html">Cursos</a></li>
+    <li><a href="pagos.html">Pagos</a></li>
+    <li><a href="contacto.html">Contacto</a></li>
+  </ul></nav>
+</div></header>
+<main>
+<section><div class="wrap">
+  <h2>Nuestros cursos</h2>
+  <div class="nivel filtro">
+    <button class="chip on" data-f="todos">Todos</button><button class="chip" data-f="nivel">Por nivel</button><button class="chip" data-f="especial">Especiales</button>
+  </div>
+  <div class="ruta" id="ruta">
+    <div class="ruta-cabecera">
+      <span class="ruta-icono">♥</span>
+      <div><h3>Encuentra tu ruta de aprendizaje</h3><p>Elige tu nivel y descubre qué estudiarás, qué libros usarás y quién te acompañará.</p></div>
+    </div>
+    <div class="nivel ruta-opciones" aria-label="Selecciona tu nivel de inglés">
+      <button class="chip" data-ruta="A1">A1 · Inicial</button><button class="chip" data-ruta="A2">A2 · Básico</button>
+      <button class="chip" data-ruta="B1">B1 · Intermedio</button><button class="chip" data-ruta="B2">B2 · Avanzado</button>
+    </div>
+    <div class="ruta-resultado" id="rutaResultado" aria-live="polite">
+      <p class="ruta-ayuda">Selecciona un nivel para ver tu recomendación personalizada.</p>
+    </div>
+  </div>
+  <div class="grid">
+<article class="card curso" data-tipo="nivel"><h3>Inglés A1 – Primeros pasos</h3><p>Saludos, números y frases del día a día.</p><p class="precio">Bs 300 bimestral</p><p>Plan acelerado: Bs 450 por 3 meses.</p><a class="btn os" href="pagos.html">Inscribirme</a></article>
+<article class="card curso" data-tipo="nivel"><h3>Inglés A2 – Básico</h3><p>Habla de tu rutina, gustos y planes.</p><p class="precio">Bs 300 bimestral</p><p>Plan acelerado: Bs 450 por 3 meses.</p><a class="btn os" href="pagos.html">Inscribirme</a></article>
+<article class="card curso" data-tipo="nivel"><h3>Inglés B1 – Intermedio</h3><p>Conversa con confianza y entiende textos reales.</p><p class="precio">Bs 360 bimestral</p><p>Plan acelerado: Bs 540 por 3 meses.</p><a class="btn os" href="pagos.html">Inscribirme</a></article>
+<article class="card curso" data-tipo="nivel"><h3>Inglés B2 – Avanzado</h3><p>Debate, escribe y presenta con fluidez.</p><p class="precio">Bs 360 bimestral</p><p>Plan acelerado: Bs 540 por 3 meses.</p><a class="btn os" href="pagos.html">Inscribirme</a></article>
+<article class="card curso" data-tipo="especial"><h3>Conversación</h3><p>Solo práctica oral en grupos pequeños.</p><p class="precio">Bs 320 bimestral</p><p>Plan acelerado: Bs 480 por 3 meses.</p><a class="btn os" href="pagos.html">Inscribirme</a></article>
+<article class="card curso" data-tipo="especial"><h3>Inglés para negocios</h3><p>Reuniones, correos y presentaciones laborales.</p><p class="precio">Bs 400 bimestral</p><p>Plan acelerado: Bs 600 por 3 meses.</p><a class="btn os" href="pagos.html">Inscribirme</a></article>
+  </div>
+  <p style="margin-top:20px"><small>Precios de ejemplo: cámbialos por los reales de tu empresa.</small></p>
+</div></section>
+</main>
+<footer>© <span id="anio">2026</span> Purple Sky English S.R.L. · Cursos virtuales de inglés · Bolivia</footer>
+<script src="js/app.js"></script>
+</body>
+</html>
